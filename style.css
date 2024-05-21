@@ -225,12 +225,14 @@ body {
     /* Tamanho da fonte */
     padding: 10px;
     /* Espaçamento interno */
-    max-width: 150px;
+    max-width: 200px;
     /* Largura máxima */
     height: auto;
     /* Altura automática */
     overflow: hidden;
     /* Oculta conteúdo excedente */
+
+    display: none;
 }
 
 
@@ -286,6 +288,35 @@ body {
     /* Cor vermelha */
 }
 
+.container-voto {
+    display: flex; /*Faz com que div informacoes candidato e imagem fiquem lado a lado*/
+    justify-content: space-between;
+    margin: 20px; /*Espaçamento entre os elementos*/
+}
+
+.instrucoes {
+    text-align: center;
+    font-size: 20px;
+}
+
+.info-voto {
+    margin: 20px;
+}
+
+.small {
+  width: 50px;
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-wrap: nowrap;
+  text-align: center;
+}
+
+.candidato-main-image {
+  min-width: 100px;
+  max-width: 200px;
+}
 .centered {
     display: flex;
     justify-content: center;

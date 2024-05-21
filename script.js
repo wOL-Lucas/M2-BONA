@@ -32,6 +32,7 @@ function comecarEtapa() {
     descricao.innerHTML = ''; // Limpa a descrição
     aviso.style.display = 'none'; // Esconde avisos
     lateral.innerHTML = ''; // Limpa imagens
+    lateral.style.display = 'none'; // Esconde div das imagens
     numeros.innerHTML = numeroHtml; // Exibe os campos dos números
 }
 
@@ -47,19 +48,20 @@ function atualizaInterface() {
         candidato = candidato[0]; // Seleciona o primeiro candidato encontrado
         seuVotoPara.style.display = 'block'; // Exibe "Seu voto para"
         aviso.style.display = 'block'; // Exibe o aviso
-        descricao.innerHTML = `Nome: ${candidato.nome}<br/>Partido: ${candidato.partido}<br/>Vice: ${candidato.vice}`; // Exibe detalhes do candidato
+        descricao.innerHTML = `Nome: ${candidato.nome}<br/>Partido: ${candidato.partido} ${candidato.vice ? "<br>Vice: " + candidato.vice.toString() : ""}`; // Exibe detalhes do candidato
 
         // Cria o HTML para exibir as fotos do candidato
         let fotosHtml = '';
         for (let i in candidato.fotos) {
             if (candidato.fotos[i].small) {
-                fotosHtml += `<div class="info-imagem small"><img src="images/${candidato.fotos[i].url}" alt=""/>${candidato.fotos[i].legenda}</div>`;
+                fotosHtml += `<div class="small"><img src="images/${candidato.fotos[i].url}" alt=""/>${candidato.fotos[i].legenda}</div>`;
             } else {
-                fotosHtml += `<div class="info-imagem"><img src="images/${candidato.fotos[i].url}" alt=""/>${candidato.fotos[i].legenda}</div>`;
+                fotosHtml += `<div class="candidato-main-image"><img src="images/${candidato.fotos[i].url}" alt=""/>${candidato.fotos[i].legenda}</div>`;
             }
         }
 
         lateral.innerHTML = fotosHtml; // Exibe as fotos do candidato
+        lateral.style.display = 'flex';
     } else {
         seuVotoPara.style.display = 'block'; // Exibe "Seu voto para"
         aviso.style.display = 'flex'; // Exibe o aviso
