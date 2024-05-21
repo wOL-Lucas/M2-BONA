@@ -64,8 +64,9 @@ function atualizaInterface() {
         lateral.style.display = 'flex';
     } else {
         seuVotoPara.style.display = 'block'; // Exibe "Seu voto para"
-        aviso.style.display = 'block'; // Exibe o aviso
+        aviso.style.display = 'flex'; // Exibe o aviso
         descricao.innerHTML = '<div class="aviso--grande pisca">VOTO NULO</div>'; // Exibe aviso de voto nulo
+        lateral.outerHTML = ''; // Limpa as imagens
     }
 }
 
@@ -121,6 +122,7 @@ function confirma() {
             comecarEtapa(); // Inicia a próxima etapa
         } else {
             document.querySelector('.tela').innerHTML = '<div class="aviso--gigante pisca">FIM.</div>'; // Exibe mensagem de fim
+            document.querySelector('.tela').classList.add('centered'); // Adiciona classe de centralizar
             console.log(votos); // Log da lista de votos
         }
     }
