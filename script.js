@@ -70,6 +70,8 @@ function atualizaInterface() {
 }
 
 function clicou(n) {
+    const audio = new Audio('sound/beep.mp3');
+    audio.play();
     let elNumero = document.querySelector('.numero.pisca'); // Seleciona o campo que está piscando
     if (elNumero !== null) {
         elNumero.innerHTML = n; // Preenche o campo com o número clicado
@@ -118,8 +120,18 @@ function confirma() {
     if (votoConfirmado) { // Se o voto foi confirmado
         etapaAtual++; // Avança para a próxima etapa
         if (etapas[etapaAtual] !== undefined) {
+            var audio = new Audio('sound/confirma-urna.mp3');
+            audio.play();
             comecarEtapa(); // Inicia a próxima etapa
         } else {
+            let candidato = etapa.candidatos.filter((item) => item.numero === numero);
+            if (candidato[0].nome === 'PHP') {
+                var audio = new Audio('sound/nooo.mp3');
+                audio.play();
+            } else {
+                var audio = new Audio('sound/pix.mp3');
+                audio.play();
+            }
             document.querySelector('.tela').innerHTML = '<div class="aviso--gigante pisca">FIM.</div>'; // Exibe mensagem de fim
             document.querySelector('.tela').classList.add('centered'); // Adiciona classe de centralizar
             console.log(votos); // Log da lista de votos
