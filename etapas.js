@@ -8,34 +8,34 @@ let etapas = [{
         numeros: 5,
         candidatos: [{
                 numero: '10001',
-                nome: 'Storm Trooper que bate a cabeça',
-                partido: 'VR - Velha República',
+                nome: 'JavaScript',
+                partido: 'NaN - Not a Number',
                 fotos: [
-                    { url: '4.jpg', legenda: 'Vereador', small: false }
+                    { url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg', legenda: 'Vereador', small: false }
                 ]
             },
             {
                 numero: '10002',
-                nome: 'Jabba The Hutt',
-                partido: 'GCH - Grande Conselho Hutt',
+                nome: 'GO Lang',
+                partido: 'LPR - Losing pointer references',
                 fotos: [
-                    { url: '1.png', legenda: 'Vereador', small: false }
+                    { url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg', legenda: 'Vereador', small: false }
                 ]
             },
             {
                 numero: '10003',
-                nome: 'Luke Skywalker',
-                partido: 'AR - Aliança Rebelde',
+                nome: 'Elixir',
+                partido: 'RM - Recursion Maniacs',
                 fotos: [
-                    { url: '2.png', legenda: 'Vereador', small: false }
+                    { url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/elixir/elixir-original.svg', legenda: 'Vereador', small: false }
                 ]
             },
             {
                 numero: '10004',
-                nome: 'R2-D2',
-                partido: 'AR - Aliança Rebelde',
+                nome: 'Python',
+                partido: 'Loading...',
                 fotos: [
-                    { url: '3.jpg', legenda: 'Vereador', small: false }
+                    { url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg', legenda: 'Vereador', small: false }
                 ]
             },
         ]
@@ -45,22 +45,22 @@ let etapas = [{
         numeros: 2,
         candidatos: [{
                 numero: '66',
-                nome: 'Darth Vader',
-                partido: 'VR - Velha República',
-                vice: 'Darth Maul',
+                nome: 'Rust',
+                partido: 'BLE - Best lang ever',
+                vice: 'Himself',
                 fotos: [
-                    { url: '66_1.png', legenda: 'Prefeito' },
-                    { url: '66_2.png', legenda: 'Vice-Prefeito', small: true },
+                    { url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg', legenda: 'Prefeito' },
+                    { url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg', legenda: 'Vice', small: true },
                 ]
             },
             {
                 numero: '99',
-                nome: 'Chewbacca',
-                partido: 'AR - Aliança Rebelde',
-                vice: 'Obi-Wan Kenobi',
+                nome: 'PHP',
+                partido: 'AP - Arr****** Party',
+                vice: 'Laravel',
                 fotos: [
-                    { url: '99_1.jpg', legenda: 'Prefeito' },
-                    { url: '99_2.png', legenda: 'Vice-Prefeito', small: true }
+                    { url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg', legenda: 'Prefeito' },
+                    { url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg', legenda: 'Vice', small: true }
                 ]
             },
         ]

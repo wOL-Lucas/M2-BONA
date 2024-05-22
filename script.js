@@ -54,9 +54,9 @@ function atualizaInterface() {
         let fotosHtml = '';
         for (let i in candidato.fotos) {
             if (candidato.fotos[i].small) {
-                fotosHtml += `<div class="small"><img src="images/${candidato.fotos[i].url}" alt=""/>${candidato.fotos[i].legenda}</div>`;
+                fotosHtml += `<div class="small"><img src="${candidato.fotos[i].url}" alt=""/>${candidato.fotos[i].legenda}</div>`;
             } else {
-                fotosHtml += `<div class="candidato-main-image"><img src="images/${candidato.fotos[i].url}" alt=""/>${candidato.fotos[i].legenda}</div>`;
+                fotosHtml += `<div class="candidato-main-image"><img src="${candidato.fotos[i].url}" alt=""/>${candidato.fotos[i].legenda}</div>`;
             }
         }
 
@@ -66,7 +66,6 @@ function atualizaInterface() {
         seuVotoPara.style.display = 'block'; // Exibe "Seu voto para"
         aviso.style.display = 'flex'; // Exibe o aviso
         descricao.innerHTML = '<div class="aviso--grande pisca">VOTO NULO</div>'; // Exibe aviso de voto nulo
-        lateral.outerHTML = ''; // Limpa as imagens
     }
 }
 
