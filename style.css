@@ -1,171 +1,242 @@
-/* Animação para piscar um elemento */
-
 @keyframes pisca {
     0%,
     100% {
         opacity: 0.2;
-        /* Opacidade no início e fim da animação */
-    }
+        }
     50% {
         opacity: 1;
-        /* Opacidade no meio da animação */
-    }
+        }
 }
 
+@keyframes flicker {
+    0% {
+    opacity: 0.27861;
+    }
+    5% {
+    opacity: 0.34769;
+    }
+    10% {
+    opacity: 0.23604;
+    }
+    15% {
+    opacity: 0.90626;
+    }
+    20% {
+    opacity: 0.18128;
+    }
+    25% {
+    opacity: 0.83891;
+    }
+    30% {
+    opacity: 0.65583;
+    }
+    35% {
+    opacity: 0.67807;
+    }
+    40% {
+    opacity: 0.26559;
+    }
+    45% {
+    opacity: 0.84693;
+    }
+    50% {
+    opacity: 0.96019;
+    }
+    55% {
+    opacity: 0.08594;
+    }
+    60% {
+    opacity: 0.20313;
+    }
+    65% {
+    opacity: 0.71988;
+    }
+    70% {
+    opacity: 0.53455;
+    }
+    75% {
+    opacity: 0.37288;
+    }
+    80% {
+    opacity: 0.71428;
+    }
+    85% {
+    opacity: 0.70419;
+    }
+    90% {
+    opacity: 0.7003;
+    }
+    95% {
+    opacity: 0.36108;
+    }
+    100% {
+    opacity: 0.24387;
+    }
+  }
 
-/* Estilo global para o corpo da página */
+  @keyframes textShadow {
+    0% {
+      text-shadow: 0.4389924193300864px 0 1px rgba(255,255,255,1.0), -0.4389924193300864px 0 1px rgba(0,0,0,0.3), 0 0 3px;
+    }
+    5% {
+      text-shadow: 2.7928974010788217px 0 1px rgba(255,255,255,1.0), -2.7928974010788217px 0 1px rgba(0,0,0,0.3), 0 0 3px;
+    }
+    10% {
+      text-shadow: 0.02956275843481219px 0 1px rgba(255,255,255,1.0), -0.02956275843481219px 0 1px rgba(0,0,0,0.3), 0 0 3px;
+    }
+    15% {
+      text-shadow: 0.40218538552878136px 0 1px rgba(255,255,255,1.0), -0.40218538552878136px 0 1px rgba(0,0,0,0.3), 0 0 3px;
+    }
+    20% {
+      text-shadow: 3.4794037899852017px 0 1px rgba(255,255,255,1.0), -3.4794037899852017px 0 1px rgba(0,0,0,0.3), 0 0 3px;
+    }
+    25% {
+      text-shadow: 1.6125630401149584px 0 1px rgba(255,255,255,1.0), -1.6125630401149584px 0 1px rgba(0,0,0,0.3), 0 0 3px;
+    }
+    30% {
+      text-shadow: 0.7015590085143956px 0 1px rgba(255,255,255,1.0), -0.7015590085143956px 0 1px rgba(0,0,0,0.3), 0 0 3px;
+    }
+    35% {
+      text-shadow: 3.896914047650351px 0 1px rgba(255,255,255,1.0), -3.896914047650351px 0 1px rgba(0,0,0,0.3), 0 0 3px;
+    }
+    40% {
+      text-shadow: 3.870905614848819px 0 1px rgba(255,255,255,1.0), -3.870905614848819px 0 1px rgba(0,0,0,0.3), 0 0 3px;
+    }
+    45% {
+      text-shadow: 2.231056963361899px 0 1px rgba(255,255,255,1.0), -2.231056963361899px 0 1px rgba(0,0,0,0.3), 0 0 3px;
+    }
+    50% {
+      text-shadow: 0.08084290417898504px 0 1px rgba(255,255,255,1.0), -0.08084290417898504px 0 1px rgba(0,0,0,0.3), 0 0 3px;
+    }
+    55% {
+      text-shadow: 2.3758461067427543px 0 1px rgba(255,255,255,1.0), -2.3758461067427543px 0 1px rgba(0,0,0,0.3), 0 0 3px;
+    }
+    60% {
+      text-shadow: 2.202193051050636px 0 1px rgba(255,255,255,1.0), -2.202193051050636px 0 1px rgba(0,0,0,0.3), 0 0 3px;
+    }
+    65% {
+      text-shadow: 2.8638780614874975px 0 1px rgba(255,255,255,1.0), -2.8638780614874975px 0 1px rgba(0,0,0,0.3), 0 0 3px;
+    }
+    70% {
+      text-shadow: 0.48874025155497314px 0 1px rgba(255,255,255,1.0), -0.48874025155497314px 0 1px rgba(0,0,0,0.3), 0 0 3px;
+    }
+    75% {
+      text-shadow: 1.8948491305757957px 0 1px rgba(255,255,255,1.0), -1.8948491305757957px 0 1px rgba(0,0,0,0.3), 0 0 3px;
+    }
+    80% {
+      text-shadow: 0.0833037308038857px 0 1px rgba(255,255,255,1.0), -0.0833037308038857px 0 1px rgba(0,0,0,0.3), 0 0 3px;
+    }
+    85% {
+      text-shadow: 0.09769827255241735px 0 1px rgba(255,255,255,1.0), -0.09769827255241735px 0 1px rgba(0,0,0,0.3), 0 0 3px;
+    }
+    90% {
+      text-shadow: 3.443339761481782px 0 1px rgba(255,255,255,1.0), -3.443339761481782px 0 1px rgba(0,0,0,0.3), 0 0 3px;
+    }
+    95% {
+      text-shadow: 2.1841838852799786px 0 1px rgba(255,255,255,1.0), -2.1841838852799786px 0 1px rgba(0,0,0,0.3), 0 0 3px;
+    }
+    100% {
+      text-shadow: 2.6208764473832513px 0 1px rgba(255,255,255,1.0), -2.6208764473832513px 0 1px rgba(0,0,0,0.3), 0 0 3px;
+    }
+  }
 
 body {
     margin: 0;
-    /* Remove margem padrão */
     display: flex;
-    /* Usa flexbox para o layout */
     justify-content: center;
-    /* Centraliza conteúdo horizontalmente */
     align-items: center;
-    /* Centraliza conteúdo verticalmente */
     font-family: Arial, Helvetica, sans-serif;
-    /* Define a fonte */
-    background-color: #232b2b;
-    /* Cor de fundo */
+    background-color: #121212;
+    height: 100vh;
+    width: 100vw;
 }
 
-
-/* Estilo para o contêiner principal da urna */
-
 .urna {
-    background-color: #ffffff;
-    /* Fundo branco */
+    background-color: rgba(255, 255, 255, 0.12);
+    box-shadow: 10px -10px 2px rgba(63, 63, 63, 0.8);
     padding: 30px;
-    /* Espaçamento interno */
     display: flex;
-    /* Usa flexbox para o layout */
     border-radius: 25px;
 }
 
-
-/* Estilo para a tela da urna */
-
 .tela {
     width: 500px;
-    /* Largura da tela */
     height: 320px;
-    /* Altura da tela */
-    background: linear-gradient(to bottom, #e0e0e0, #d2d2d2);
-    /* Gradiente de fundo */
+    background: linear-gradient(45deg, #f2f2f2, #e0e0e0);
     border: 2px solid #999999;
-    /* Borda */
     display: flex;
-    /* Usa flexbox para o layout */
     flex-direction: column;
-    /* Direção do flexbox em coluna */
     border-radius: 10px;
-    /* Bordas arredondadas */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    /* Sombra */
+    box-shadow: 0 0 100px rgba(255, 255, 255, 0.5);
+    animation: textShadow 3.6s infinite;
 }
 
-
-/* Estilo para os números digitados */
-
-
-/* Estilo para o teclado */
+.tela::after {
+    z-index: 2;
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 320px;
+    animation: textShadow 0.5s infinite;
+}
 
 .teclado {
     background-color: #e0e0e0;
-    /* Cor de fundo */
     margin-left: 30px;
-    /* Espaçamento à esquerda */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px -2px 0px 10px rgba(0, 0, 0, 0.1);
 }
-
-
-/* Estilo para as linhas do teclado */
 
 .teclado--linha {
     display: flex;
-    /* Usa flexbox para o layout */
     justify-content: center;
-    /* Centraliza conteúdo horizontalmente */
     align-items: flex-end;
-    /* Alinha conteúdo no final verticalmente */
 }
-
-
-/* Estilo para os botões do teclado */
 
 .teclado--botao {
     width: 70px;
-    /* Largura */
     height: 40px;
-    /* Altura */
     background-color: #999999;
-    /* Cor de fundo */
     color: #ffffff;
 
-    box-shadow: 0px 2px 0px 1px rgba(0, 0, 0, 0.2);
-    /* Cor do texto */
+    box-shadow: 2px -2px 0px 1px rgba(0, 0, 0, 0.2);
     font-size: 25px;
-    /* Tamanho da fonte */
     display: flex;
-    /* Usa flexbox para o layout */
     justify-content: center;
-    /* Centraliza conteúdo horizontalmente */
     align-items: center;
-    /* Centraliza conteúdo verticalmente */
     margin: 10px;
-    /* Espaçamento */
     cursor: pointer;
-    /* Muda cursor para indicar clicável */
     border: none;
-    /* Remove borda */
     border-radius: 5px;
-    /* Bordas arredondadas */
 }
-
-
-/* Estilo para o botão branco */
 
 .botao--branco {
     background-color: #ffffff;
-    box-shadow: 0px 2px 0px 1px rgba(0, 0, 0, 0.2);
-    /* Fundo branco */
+    box-shadow: 2px -2px 0px 1px rgba(0, 0, 0, 0.2);
     color: #000000;
-    /* Cor do texto preta */
     font-size: 15px;
-    /* Tamanho da fonte */
 }
-
-
-/* Estilo para os botões corrige e confirma */
 
 .botao--corrige,
 .botao--confirma {
     font-size: 15px;
-    /* Tamanho da fonte */
     width: 90px;
-    /* Largura */
     height: 50px;
-    /* Altura */
     border-radius: 5px;
-    /* Bordas arredondadas */
 }
-
-
-/* Estilo específico para o botão corrige */
 
 .botao--corrige {
     background-color: rgb(234, 141, 12);
-    box-shadow: 0px 2px 0px 1px rgba(234, 141, 12, 0.7);
-    /* Cor de fundo laranja */
+    box-shadow: 2px -2px 0px 1px rgba(234, 141, 12, 0.7);
 }
-
-
-/* Estilo específico para o botão confirma */
 
 .botao--confirma {
     background-color: rgb(92, 184, 92);
-    box-shadow: 0px 2px 0px 1px rgba(92, 184, 92, 0.8);
-    /* Cor de fundo verde */
+    box-shadow: 2px -2px 0px 1px rgba(92, 184, 92, 0.8);
 }
 
 .tela {
@@ -179,8 +250,6 @@ body {
     gap: 5px;
 }
 
-/* Estilo para os campos de números */
-
 .info-voto-numeros {
     display: flex;
     flex-direction: row;
@@ -188,61 +257,34 @@ body {
 
 .numero {
     display: inline-block;
-    /* Exibe em linha */
     width: 30px;
-    /* Largura */
     height: 40px;
-    /* Altura */
     border: 1px solid #999999;
     border-radius: 8px;
-    /* Borda */
     text-align: center;
-    /* Alinha texto ao centro */
     line-height: 40px;
-    /* Alinha texto verticalmente */
     font-size: 25px;
-    /* Tamanho da fonte */
     background-color: #ffffff;
-    /* Fundo branco */
     margin: 5px;
-    /* Espaçamento */
 }
-
-
-/* Estilo para o efeito de piscar */
 
 .pisca {
     animation: pisca 1s infinite;
-    /* Aplica animação de piscar infinitamente */
 }
-
-
-/* Estilo para as imagens dos candidatos */
 
 .info-imagem {
     border: 1px solid #999999;
-    /* Borda */
     background-color: #ffffff;
-    /* Fundo branco */
     text-align: center;
-    /* Texto centralizado */
     font-size: 14px;
-    /* Tamanho da fonte */
     padding: 30px;
-    /* Espaçamento interno */
     width: 30%;
-    /* Largura máxima */
     height: auto;
-    /* Altura automática */
     overflow: hidden;
-    /* Oculta conteúdo excedente */
     flex-direction: row;
     justify-content: center;
     display: none;
 }
-
-
-/* Estilo para as imagens dentro do contêiner de imagem */
 
 .info-imagem img {
     display: flex;
@@ -252,45 +294,28 @@ body {
     max-width: 90%;
 }
 
-
-/* Estilo para avisos grandes e gigantes */
-
 .aviso--grande,
 .aviso--gigante {
     font-weight: bold;
-    /* Texto em negrito */
     display: flex;
-    /* Usa flexbox para o layout */
     justify-content: center;
-    /* Centraliza conteúdo horizontalmente */
     align-items: center;
-    /* Centraliza conteúdo verticalmente */
 }
-
-
-/* Estilo para avisos grandes */
 
 .aviso--grande {
     font-size: 40px;
-    /* Tamanho da fonte */
     color: #d9534f;
-    /* Cor vermelha */
 }
-
-
-/* Estilo para avisos gigantes */
 
 .aviso--gigante {
     font-size: 70px;
-    /* Tamanho da fonte */
     color: #d9534f;
-    /* Cor vermelha */
 }
 
 .container-voto {
-    display: flex; /*Faz com que div informacoes candidato e imagem fiquem lado a lado*/
+    display: flex; 
     justify-content: space-between;
-    margin: 20px; /*Espaçamento entre os elementos*/
+    margin: 20px; 
 }
 
 .instrucoes {
